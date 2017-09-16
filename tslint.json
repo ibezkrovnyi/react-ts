@@ -1,0 +1,9 @@
+{
+  "extends": ["tslint:latest", "tslint-react", "tslint-config-airbnb"],
+  "rules": {
+    "no-boolean-literal-compare": false,
+    "strict-boolean-expressions": false,
+    "member-access": [true, "no-public"]
+  },
+  "type-check": true
+}
