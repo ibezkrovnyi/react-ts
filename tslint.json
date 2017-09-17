@@ -3,7 +3,12 @@
   "rules": {
     "no-boolean-literal-compare": false,
     "strict-boolean-expressions": false,
-    "member-access": [true, "no-public"]
+    "member-access": [true, "no-public"],
+    "variable-name": [true, "check-format", "ban-keywords", "allow-pascal-case"],
+    "interface-name": [true, "never-prefix"],
+    "object-shorthand-properties-first": false,
+    "ordered-imports": false,
+    "import-name": false
   },
   "type-check": true
 }
