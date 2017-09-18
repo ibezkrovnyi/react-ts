@@ -18,15 +18,15 @@ export class App extends React.Component<InjectedProps> {
     this.props.load();
   }
 
-  addNote = async () => {
-    await this.props.addNote('');
+  addNote = () => {
+    this.props.addNote('');
     this.props.save();
   }
 
   render() {
     return (
       <div>
-        <button type="button">ADD NOTE</button>
+        <button type="button" onClick={this.addNote}>ADD NOTE</button>
         {this.props.notes.map((note, index) => <Note key={index} text={note.text} />)}
       </div>
     );
